@@ -1,7 +1,6 @@
 # Build stage
 FROM microsoft/aspnetcore-build:2 AS build-env
 
-
 WORKDIR /generator
 
 ## restore
