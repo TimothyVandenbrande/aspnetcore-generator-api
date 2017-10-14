@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install test version of docker engine, also shell completions
-curl -fsSL https://test.docker.com/ | sh
+# curl -fsSL https://test.docker.com/ | sh
+curl -fsSL https://get.docker.com  | sh
 
 # Add the vagrant user to the docker group
 usermod -aG docker vagrant
