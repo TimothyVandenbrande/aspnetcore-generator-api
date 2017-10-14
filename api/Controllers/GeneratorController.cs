@@ -19,9 +19,9 @@ namespace api.Controllers
         public string MAIL_HOST;
         public int MAIL_PORT;
 
-        public GenerateController(IOptions<MailServerConfig> MailServerConfigAccessor)
+        public GenerateController(IOptions<MailServerConfig> mailServerConfigAccessor)
         {
-            var config = MailServerConfigAccessor.Value;
+            var config = mailServerConfigAccessor.Value;
             MAIL_HOST = config.Host;
             MAIL_PORT = config.Port;
         }
@@ -38,7 +38,7 @@ namespace api.Controllers
             {
                 Text = string.Join(Environment.NewLine, range.Of(Name.FullName))
             };
-            using(var mailClient = new SmtpClient())
+            using (var mailClient = new SmtpClient())
             {
                 await mailClient.ConnectAsync(MAIL_HOST, MAIL_PORT, SecureSocketOptions.None);
                 await mailClient.SendAsync(message);
