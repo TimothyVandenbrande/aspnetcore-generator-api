@@ -11,6 +11,6 @@ object AspnetcoreGeneratorApi_HttpsGithubComTimothyVandenbrandeAspnetcoreGenerat
     branch = "refs/heads/wip"
     authMethod = password {
         userName = "timothyvandenbrande"
-        password = "credentialsJSON:9e5412e0-4dca-42d3-9623-3d9223619855"
+        password = "credentialsJSON:dc95dea6-9796-4218-bcb2-0e5b8138661a"
     }
 })
