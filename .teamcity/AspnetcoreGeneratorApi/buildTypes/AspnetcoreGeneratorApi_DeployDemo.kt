@@ -26,7 +26,7 @@ object AspnetcoreGeneratorApi_DeployDemo : BuildType({
         script {
             workingDir = "deploy"
             scriptContent = """
-                export DOCKER_HOST=192.168.6.201
+                export DOCKER_HOST=192.168.66.201
                 docker stack deploy -c demo.yml demo
             """.trimIndent()
         }

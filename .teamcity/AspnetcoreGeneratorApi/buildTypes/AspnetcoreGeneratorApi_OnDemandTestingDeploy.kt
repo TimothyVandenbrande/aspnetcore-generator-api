@@ -27,7 +27,7 @@ object AspnetcoreGeneratorApi_OnDemandTestingDeploy : BuildType({
             scriptContent = """
                 #!/bin/bash
                 
-                export DOCKER_HOST=192.168.6.201
+                export DOCKER_HOST=192.168.66.201
                 
                 # determine stack number by removing all non-numeric characters
                 stack_num=${'$'}{STACK_NAME//[^0-9]/}
